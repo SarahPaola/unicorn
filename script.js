@@ -98,24 +98,24 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("Basket:", basket);
     populateBasketOverlay();
     updateBasketBadge();
-    updateOverlayHeadlineCount(); // Update the headline count
+    updateOverlayHeadlineCount(); // 
   };
 // Function: Decrease quantity of an item 
   const decreaseQuantity = (index) => {
     if (basket[index].quantity > 1) {
       basket[index].quantity--;
     } else {
-      basket.splice(index, 1); // Remove the item if quantity becomes 0
+      basket.splice(index, 1); 
     }
     populateBasketOverlay(); // Refresh the overlay
-    updateBasketBadge(); // Update the badge
-    updateOverlayHeadlineCount(); // Update the headline count
+    updateBasketBadge();
+    updateOverlayHeadlineCount(); 
   };
 
   const increaseQuantity = (index) => {
     basket[index].quantity++;
-    populateBasketOverlay(); // Refresh the overlay
-    updateBasketBadge(); // Update the badge
+    populateBasketOverlay(); 
+    updateBasketBadge(); 
     updateOverlayHeadlineCount(); // Update the headline count
   };
 
